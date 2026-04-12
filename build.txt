@@ -1,0 +1,3 @@
+displayName = Untitled Terraria Mod
+author = amathew4538
+version = 0.1
