@@ -8,14 +8,16 @@ namespace UntitledTerrariaMod.Content
 	public class CustomRecipeGroups : ModSystem
 	{
 		// A place to store the recipe group so we can easily use it later
-		public static RecipeGroup hammerRecipeGroup;
+		public static RecipeGroup HammerRecipeGroup;
+        public static RecipeGroup SilverBarRecipeGroup;
 
 		public override void Unload() {
-			hammerRecipeGroup = null;
+			HammerRecipeGroup = null;
+            SilverBarRecipeGroup = null;
 		}
 
 		public override void AddRecipeGroups() {
-			hammerRecipeGroup = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} Hammer",
+			HammerRecipeGroup = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} Hammer",
                 ItemID.WoodenHammer,
                 ItemID.RichMahoganyHammer,
                 ItemID.PalmWoodHammer,
@@ -50,7 +52,11 @@ namespace UntitledTerrariaMod.Content
                 ItemID.TheAxe
             );
 
-			RecipeGroup.RegisterGroup("AnyHammer", hammerRecipeGroup);
+			RecipeGroup.RegisterGroup("AnyHammer", HammerRecipeGroup);
+
+            SilverBarRecipeGroup = new RecipeGroup(() => $"{Language.GetTextValue("LegacyMisc.37")} {Lang.GetItemNameValue(ItemID.SilverBar)}",
+			ItemID.SilverBar, ItemID.TungstenBar);
+			RecipeGroup.RegisterGroup(nameof(ItemID.SilverBar), SilverBarRecipeGroup);
 		}
     }
 }

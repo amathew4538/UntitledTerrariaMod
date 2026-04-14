@@ -30,7 +30,7 @@ namespace UntitledTerrariaMod.Content.Items.Weapons
 		{
 			Recipe recipe = CreateRecipe()
 				.AddIngredient(ItemID.FlintlockPistol, 1)
-				.AddRecipeGroup(CustomRecipeGroups.hammerRecipeGroup, 1)
+				.AddRecipeGroup(CustomRecipeGroups.HammerRecipeGroup, 1)
 				.AddTile(TileID.Anvils)
 				.Register();
 		}

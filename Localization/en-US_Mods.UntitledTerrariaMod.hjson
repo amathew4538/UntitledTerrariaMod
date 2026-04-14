@@ -5,4 +5,21 @@ Items: {
 		DisplayName: Bent Gun
 		Tooltip: Stabs bullets!
 	}
+
+	MusicNote: {
+		DisplayName: Music Note
+		Tooltip: Musical and Beautiful
+	}
+
+	Paper: {
+		DisplayName: Paper
+		Tooltip: Don't cut yourself!
+	}
+
+	Violin: {
+		DisplayName: Violin
+		Tooltip: Much Prodigy!
+	}
 }
+
+Projectiles.MusicNoteProjectile.DisplayName: Music Note Projectile
