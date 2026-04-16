@@ -7,7 +7,7 @@ namespace UntitledTerrariaMod.Content
 {
 	public class CustomRecipeGroups : ModSystem
 	{
-		// A place to store the recipe group so we can easily use it later
+		// A place to store the recipe group so to easily use it later
 		public static RecipeGroup HammerRecipeGroup;
         public static RecipeGroup SilverBarRecipeGroup;
 

@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/amathew4538/Library/Application Support/Terraria/tModLoader/ModSources/UntitledTerrariaMod/UntitledTerrariaMod.csproj": {}
+  },
+  "projects": {
+    "/Users/amathew4538/Library/Application Support/Terraria/tModLoader/ModSources/UntitledTerrariaMod/UntitledTerrariaMod.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/amathew4538/Library/Application Support/Terraria/tModLoader/ModSources/UntitledTerrariaMod/UntitledTerrariaMod.csproj",
+        "projectName": "UntitledTerrariaMod",
+        "projectPath": "/Users/amathew4538/Library/Application Support/Terraria/tModLoader/ModSources/UntitledTerrariaMod/UntitledTerrariaMod.csproj",
+        "packagesPath": "/Users/amathew4538/.nuget/packages/",
+        "outputPath": "/Users/amathew4538/Library/Application Support/Terraria/tModLoader/ModSources/UntitledTerrariaMod/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/amathew4538/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/amathew4538/homebrew/Cellar/dotnet@8/8.0.125/libexec/sdk/8.0.125/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
