@@ -23,3 +23,27 @@ Items: {
 }
 
 Projectiles.MusicNoteProjectile.DisplayName: Music Note Projectile
+Emotes.LuthierEmote.Command: luthieremote
+
+NPCs: {
+	Luthier: {
+		DisplayName: Luthier
+
+		TownNPCMood: {
+			Content: It's pretty ok here. I need to get to work soon, though.
+			NoHome: A workshop would be nice, you know. Can't work with tools without a table.
+			FarFromHome: I'm just exploring for new wood. I would like to go back, though.
+			LoveSpace: There's so much space for instruments!
+			DislikeCrowded: I can't really focus on my instruments with so many people.
+			HateCrowded: There are too many people here! They'll break all my instruments!
+			LikeBiome: I like {BiomeName}. It's wood is quite beautiful and strong.
+			DislikeBiome: Not {BiomeName}! My instruments will be so out of tune!
+			LoveNPC: I love {NPCName}. He understands the intricacies of creating art.
+			LikeNPC: I like {NPCName}. He is one of the only ones who listen to me.
+			DislikeNPC: I'm not fond of {NPCName}. Bombs and instruments are not a good combo.
+			HateNPC: I HATE {NPCName}. She keeps preventing me from getting any wood!
+			LikeNPC_Princess: "{NPCName}? She's great! Royalty understands classical music."
+			Princess_LovesNPC: "{NPCName} is one of the best in the town. Perfection at all times."
+		}
+	}
+}

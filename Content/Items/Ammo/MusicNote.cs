@@ -20,7 +20,7 @@ namespace UntitledTerrariaMod.Content.Items.Ammo
 			Item.maxStack = Item.CommonMaxStack;
 			Item.consumable = true;
 			Item.knockBack = 2f;
-			Item.value = Item.sellPrice(0, 0, 1, 0);
+			Item.value = Item.buyPrice(copper: 5);
 			Item.rare = ItemRarityID.Yellow;
 
             Item.shoot = ModContent.ProjectileType<Projectiles.MusicNoteProjectile>();
