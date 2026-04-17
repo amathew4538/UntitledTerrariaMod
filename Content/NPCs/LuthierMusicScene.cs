@@ -1,6 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 using System.Linq;
+using System;
 
 namespace UntitledTerrariaMod.Content.NPCs
 {
@@ -8,6 +9,7 @@ namespace UntitledTerrariaMod.Content.NPCs
     {
         // This tells the game which music to play
         public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/AmongAShiningNight");
+        private static readonly Random randomNumber = new();
 
         // This determines when the music should play
         public override bool IsSceneEffectActive(Player player) {
@@ -21,7 +23,7 @@ namespace UntitledTerrariaMod.Content.NPCs
             bool isLanternNight = !Main.dayTime && Terraria.GameContent.Events.LanternNight.LanternsUp;
             bool inSky = luthier.position.Y < Main.worldSurface * 16f * 0.5f;
             bool playerNear = player.Distance(luthier.Center) < 1200f;
-            bool randomSucceeded = Random.NextDouble() < 0.025;
+            bool randomSucceeded = randomNumber.NextDouble() < 1.0;
             bool afterMidnight = !Main.dayTime && Main.time >= 16200;
 
 

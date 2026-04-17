@@ -235,7 +235,7 @@ namespace UntitledTerrariaMod.Content.NPCs
             }
         }
         public override void AddShops() {
-            var npcShop = new NPCShop(Type, ShopName)
+            NPCShop npcShop = new NPCShop(Type, ShopName)
                 .Add(ItemID.Wood)
                 .Add(ItemID.Sawmill)
                 .Add(ModContent.ItemType<Items.Ammo.MusicNote>())
@@ -243,7 +243,7 @@ namespace UntitledTerrariaMod.Content.NPCs
             npcShop.Register();
         }
         public override string GetChat() {
-    		WeightedRandom<string> chat = new WeightedRandom<string>();
+    		WeightedRandom<string> chat = new();
 
     		chat.Add(Language.GetTextValue("Mods.UntitledTerrariaMod.NPCs.Luthier.TownNPCMood.Content"));
     		chat.Add("Have you ever heard the soul of an maple? It comes out in a tone unrivaled once it's carved.");
